@@ -1,17 +1,17 @@
 {
-  "name": "stylelint-config-standard",
-  "version": "11.0.0",
-  "description": "Standard shareable config for stylelint",
+  "name": "stylelint-config-uploadcare",
+  "version": "1.0.0",
+  "description": "Uploadcare shareable config for stylelint",
   "keywords": [
     "stylelint",
     "stylelint-config",
-    "standard"
+    "uploadcare"
   ],
-  "author": "Stylelint",
+  "author": "Uploadcare",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stylelint/stylelint-config-standard.git"
+    "url": "https://github.com/Akurganow/stylelint-config-uploadcare.git"
   },
   "main": "index.js",
   "files": [
@@ -20,7 +20,7 @@
   "devDependencies": {
     "ava": "^0.15.0",
     "eslint": "^2.2.0",
-    "eslint-config-stylelint": "^2.0.0",
+    "eslint-config-uploadcare": "*",
     "npmpub": "^3.0.1",
     "stylelint": "^7.0.1"
   },
@@ -41,7 +41,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "stylelint"
+      "uploadcare"
     ]
   }
 }
