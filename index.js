@@ -49,7 +49,7 @@ module.exports = {
 		'function-parentheses-space-inside': 'never-single-line',
 		'function-url-quotes': 'always',
 		'function-whitespace-after': 'always',
-		'indentation': ['tab'],
+		'indentation': [2],
 		'keyframe-declaration-no-important': true,
 		'length-zero-no-unit': true,
 		'max-empty-lines': 1,
