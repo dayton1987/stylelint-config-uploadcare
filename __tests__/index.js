@@ -3,8 +3,8 @@ import stylelint from 'stylelint'
 import test from 'ava'
 
 const validCss = (
-`@import url(x.css);
-@import url(y.css);
+`@import url('x.css');
+@import url('y.css');
 
 /**
  * Multi-line comment
@@ -12,8 +12,8 @@ const validCss = (
 
 .selector-1,
 .selector-2,
-.selector-3[type="text"] {
-  background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
+.selector-3[type='text'] {
+  background: linear-gradient(#fff, rgba(0, 0, 0, .8));
   box-sizing: border-box;
   display: block;
   color: #333;
@@ -21,13 +21,21 @@ const validCss = (
 
 .selector-a,
 .selector-b:not(:first-child) {
-  padding: 10px !important;
+  padding: 10px;
   top: calc(calc(1em * 2) / 3);
 }
 
-.selector-x { width: 10%; }
-.selector-y { width: 20%; }
-.selector-z { width: 30%; }
+.selector-x {
+  width: 10%;
+}
+
+.selector-y {
+  width: 20%;
+}
+
+.selector-z {
+  width: 30%;
+}
 
 /* Single-line comment */
 
@@ -41,7 +49,7 @@ const validCss = (
 @media (min-orientation: portrait), projection and (color) {
   .selector-i + .selector-ii {
     background: color(rgb(0, 0, 0) lightness(50%));
-    font-family: helvetica, "arial black", sans-serif;
+    font-family: helvetica, 'arial black', sans-serif;
   }
 }
 
@@ -68,9 +76,9 @@ const validCss = (
   }
 
   /* Flush nested single line comment */
-  .selector::after {
+  .selector:after {
     content: '→';
-    background-image: url(x.svg);
+    background-image: url('x.svg');
   }
 }
 
@@ -78,7 +86,7 @@ const validCss = (
 
 const invalidCss = (
 `a {
-  top: .2em;
+  top: 0.2em;
 }
 
 `)
@@ -106,8 +114,10 @@ test('a warning with invalid css', test =>
     const {errored, results} = data
     const {warnings} = results[0]
 
+    console.log(warnings) //eslint-disable-line
+
     test.truthy(errored, 'errored')
     test.is(warnings.length, 1, 'flags one warning')
-    test.is(warnings[0].text, 'Expected a leading zero (number-leading-zero)', 'correct warning text')
+    test.is(warnings[0].text, 'Unexpected leading zero (number-leading-zero)', 'correct warning text')
   })
 )
