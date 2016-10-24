@@ -39,9 +39,7 @@
       "es2015"
     ]
   },
-  "eslintConfig": {
-    "extends": [
-      "uploadcare"
-    ]
+  "dependencies": {
+    "babel-eslint": "^7.0.0"
   }
 }
