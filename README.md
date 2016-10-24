@@ -1,6 +1,6 @@
 # stylelint-config-uploadcare
 
-[![NPM version](http://img.shields.io/npm/v/stylelint-config-standard.svg)](https://www.npmjs.org/package/stylelint-config-standard) [![Build Status](https://travis-ci.org/stylelint/stylelint-config-standard.svg?branch=master)](https://travis-ci.org/stylelint/stylelint-config-standard) [![Build status](https://ci.appveyor.com/api/projects/status/o8rfhyax6n7bjnlt/branch/master?svg=true)](https://ci.appveyor.com/project/stylelint/stylelint-config-standard/branch/master)
+[![NPM version](http://img.shields.io/npm/v/stylelint-config-uploadcare.svg)](https://www.npmjs.org/package/stylelint-config-uploadcare) [![Build Status](https://travis-ci.org/stylelint/stylelint-config-uploadcare.svg?branch=master)](https://travis-ci.org/stylelint/stylelint-config-uploadcare) [![Build status](https://ci.appveyor.com/api/projects/status/o8rfhyax6n7bjnlt/branch/master?svg=true)](https://ci.appveyor.com/project/stylelint/stylelint-config-uploadcare/branch/master)
 
 > The standard shareable config for stylelint.
 
@@ -92,24 +92,24 @@ It favours flexibility over strictness for things like multi-line lists and sing
 ## Installation
 
 ```console
-$ npm install stylelint-config-standard
+$ npm install stylelint-config-uploadcare
 ```
 
 ## Usage
 
-If you've installed `stylelint-config-standard` locally within your project, just set your `stylelint` config to:
+If you've installed `stylelint-config-uploadcare` locally within your project, just set your `stylelint` config to:
 
 ```json
 {
-	"extends": "stylelint-config-standard"
+	"extends": "stylelint-config-uploadcare"
 }
 ```
 
-If you've globally installed `stylelint-config-standard` using the `-g` flag, then you'll need to use the absolute path to `stylelint-config-standard` in your config e.g.
+If you've globally installed `stylelint-config-uploadcare` using the `-g` flag, then you'll need to use the absolute path to `stylelint-config-uploadcare` in your config e.g.
 
 ```json
 {
-	"extends": "/absolute/path/to/stylelint-config-standard"
+	"extends": "/absolute/path/to/stylelint-config-uploadcare"
 }
 ```
 
@@ -121,7 +121,7 @@ For example, to add the `at-rule-no-unknown` rule and use its `ignoreAtRules` op
 
 ```json
 {
-	"extends": "stylelint-config-standard",
+	"extends": "stylelint-config-uploadcare",
 	"rules": {
 		"at-rule-no-unknown": [ true, {
 			"ignoreAtRules": [
@@ -138,7 +138,7 @@ For example, to add the `at-rule-no-unknown` rule and use its `ignoreAtRules` op
 
 #### Suggested additions
 
-`stylelint-config-standard` is a great foundation for your own config. You can extend it create a tailored and much stricter config:
+`stylelint-config-uploadcare` is a great foundation for your own config. You can extend it create a tailored and much stricter config:
 
 - Specify what quotes must be used using:
 	- [`font-family-name-quotes`](https://github.com/stylelint/stylelint/blob/master/src/rules/font-family-name-quotes/README.md)
@@ -209,7 +209,7 @@ The config is broadly compatible with [SugarSS](https://github.com/postcss/sugar
 
 ```json
 {
-	"extends": "stylelint-config-standard",
+	"extends": "stylelint-config-uploadcare",
 	"rules": {
 		"declaration-block-trailing-semicolon": null
 	}
