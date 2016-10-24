@@ -296,6 +296,15 @@ babel-core@^6.16.0, babel-core@^6.3.21:
     slash "^1.0.0"
     source-map "^0.5.0"
 
+babel-eslint:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-7.0.0.tgz#54e51b4033f54ac81326ecea4c646a779935196d"
+  dependencies:
+    babel-traverse "^6.15.0"
+    babel-types "^6.15.0"
+    babylon "^6.11.2"
+    lodash.pickby "^4.6.0"
+
 babel-generator@^6.1.0, babel-generator@^6.17.0:
   version "6.17.0"
   resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.17.0.tgz#b894e3808beef7800f2550635bfe024b6226cf33"
@@ -829,7 +838,7 @@ babel-types@^6.13.0, babel-types@^6.14.0, babel-types@^6.15.0, babel-types@^6.16
     lodash "^4.2.0"
     to-fast-properties "^1.0.1"
 
-babylon@^6.1.0, babylon@^6.11.0:
+babylon@^6.1.0, babylon@^6.11.0, babylon@^6.11.2:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.13.0.tgz#58ed40dd2a8120612be5f318c2c0bedbebde4a0b"
 
@@ -2380,6 +2389,10 @@ load-json-file@^1.0.0, load-json-file@^1.1.0:
 lodash.debounce@^4.0.3:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+
+lodash.pickby@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/lodash.pickby/-/lodash.pickby-4.6.0.tgz#7dea21d8c18d7703a27c704c15d3b84a67e33aff"
 
 lodash@^4.0.0, lodash@^4.1.0, lodash@^4.2.0, lodash@^4.3.0:
   version "4.16.4"
